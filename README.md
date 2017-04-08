@@ -13,29 +13,23 @@ npm i --save github-list-follow
 # Usage
 
 ```javascript
-
 var github = require('github-list-follow');
-
 var user = github('fcannizzaro');
-
 ```
 
 ## Promise
 
 ```javascript
-
 user
   .followers()
   .then(followers => {
     console.log(followers);
   });
-
 ```
 
 ## Event Emitter
 
 ```javascript
-
 var onData = (data) => {
   console.log(data);
 }
@@ -47,8 +41,7 @@ var onFinished = () => {
 user
   .followers(true)
   .on('data', onData)
-  .on('finish', onFinished)
-
+  .on('finish', onFinished);
 ```
 
 # Functions
