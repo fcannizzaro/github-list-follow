@@ -1,0 +1,28 @@
+{
+  "name": "github-list-follow",
+  "version": "1.0.0",
+  "description": "Get Followers/Following on github (no token required)",
+  "main": "index.js",
+  "dependencies": {
+    "cheerio": "^0.22.0",
+    "request": "^2.81.0"
+  },
+  "scripts": {
+    "test": "node sample.js"
+  },
+  "keywords": [
+    "github",
+    "followers",
+    "following"
+  ],
+  "author": "Francesco Cannizzaro <francescosaverio.cannizzaro@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fcannizzaro/github-list-follow.git"
+  },
+  "bugs": {
+    "url": "https://github.com/fcannizzaro/github-list-follow/issues"
+  },
+  "homepage": "https://github.com/fcannizzaro/github-list-follow#readme"
+}
