@@ -8,7 +8,8 @@
     "request": "^2.81.0"
   },
   "scripts": {
-    "test": "node sample.js"
+    "test": "node sample.js",
+    "prepublish": "babel source --presets babel-preset-es2015 --out-dir distribution"
   },
   "keywords": [
     "github",
@@ -24,5 +25,9 @@
   "bugs": {
     "url": "https://github.com/fcannizzaro/github-list-follow/issues"
   },
-  "homepage": "https://github.com/fcannizzaro/github-list-follow#readme"
+  "homepage": "https://github.com/fcannizzaro/github-list-follow#readme",
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-preset-es2015": "^6.24.1"
+  }
 }
