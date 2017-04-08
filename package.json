@@ -1,6 +1,6 @@
 {
   "name": "github-list-follow",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Get Followers/Following on github (no token required)",
   "main": "dist/index.js",
   "dependencies": {
@@ -9,7 +9,7 @@
   },
   "scripts": {
     "test": "node dist/sample.js",
-    "prepublish": "babel src --presets babel-preset-es2015 --out-dir distribution"
+    "prepublish": "babel src --presets babel-preset-es2015 --out-dir dist"
   },
   "keywords": [
     "github",
