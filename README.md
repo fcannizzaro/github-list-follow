@@ -13,8 +13,11 @@ npm i --save github-list-follow
 # Usage
 
 ```javascript
+
 var github = require('github-list-follow');
+
 var user = github('fcannizzaro');
+
 ```
 
 ## Promise
@@ -51,14 +54,12 @@ user
 # Functions
 
 ### followers([, ev])
-
-- `boolean` ev: use event emitter. (**Default** false)
-- **Return** promise or event emitter
-
 ### following([, ev])
 
+Scrape all pages of user followers / following.
+
 - `boolean` ev: use event emitter. (**Default** false)
-- **Return** promise or event emitter
+- **Return** promise or event emitter.
 
 # Events
 
