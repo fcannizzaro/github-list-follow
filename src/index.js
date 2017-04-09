@@ -16,10 +16,10 @@ var paginate = (user, page, tab, dest, cb, emitter) => {
 
       if (data.length > 0) {
 
-        dest.push(...data);
-
         if (emitter) {
           emitter.emit('data', data);
+        } else {
+          dest.push(...data);
         }
 
         return paginate(user, page + 1, tab, dest, cb, emitter);
